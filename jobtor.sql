@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 07, 2018 at 01:03 AM
+-- Generation Time: Aug 07, 2018 at 01:11 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.0.27
 
@@ -41,14 +41,6 @@ CREATE TABLE `job` (
   `day_month` varchar(20) NOT NULL,
   `available` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `job`
---
-
-INSERT INTO `job` (`id`, `post_date`, `username`, `date_from`, `date_to`, `division`, `zilla`, `thana`, `duration`, `day_month`, `available`) VALUES
-(107, '2018-07-30 21:49:32', 'bbhuiyan1', '2018-07-31', '2018-08-02', 'Dhaka', 'Dhaka', 'Sutrapur', 1, 'Day(s)', 1),
-(108, '2018-07-31 09:00:47', 'bbhuiyan1', '2018-07-31', '2018-08-02', 'Chittagong', 'Chandpur', 'Haimchar', 1, 'Day(s)', 1);
 
 -- --------------------------------------------------------
 
@@ -688,14 +680,6 @@ CREATE TABLE `sub` (
   `available` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `sub`
---
-
-INSERT INTO `sub` (`id`, `post_date`, `username`, `date_to`, `date_from`, `division`, `zilla`, `thana`, `duration`, `day_month`, `payment`, `hospital_name`, `details`, `available`) VALUES
-(55, '2018-07-30 21:55:04', 'bbhuiyan1', '2018-08-04', '2018-07-31', 'Dhaka', 'Dhaka', 'Dhanmondi', 3, 'Day(s)', '5000', 'Japan-Bangladesh Friendship', 'day', 1),
-(56, '2018-07-31 09:01:56', 'bbhuiyan2', '2018-08-01', '2018-07-31', 'Dhaka', 'Dhaka', 'Sutrapur', 1, 'Day(s)', '557676', 'Dhaka National  Hospital', 'hgfh', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -731,14 +715,6 @@ CREATE TABLE `users` (
   `from_date` date DEFAULT NULL,
   `to_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `create_date`, `fullname`, `email`, `password`, `username`, `phone`, `fb_name`, `fb_profile`, `pp_url`, `birthdate`, `college`, `work1`, `street`, `work_division`, `work_thana`, `work_zilla`, `work2`, `mbbs_reg`, `designation`, `pass_change`, `doctor`, `workinglat`, `workinglon`, `available`, `from_date`, `to_date`) VALUES
-(10, '2018-07-30 22:07:18', 'Bashar Bhuiyan', 'bbhuiyan2@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'bbhuiyan2', '01781486421', NULL, NULL, 'uploads/pro_pic/e715144f2c9872f2b42261e89c68cb40e8e8caf7=bbhuiyan2.jpg', NULL, 'Dhaka National  Hospital', NULL, 'Luxmibazar', 'Dhaka', 'Sutrapur', 'Dhaka', NULL, NULL, NULL, '2018-07-30 22:07:18', 0, NULL, NULL, NULL, NULL, NULL),
-(11, '2018-07-30 22:36:13', 'Bashar Bhuiyan', 'bbhuiyan1@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'bbhuiyan1', '01781486421', NULL, NULL, 'uploads/pro_pic/1b66a5db8a4278b05daaab162ff81f202ef6bf32=bbhuiyan1.jpg', '1994-03-31', 'Dhaka Medical College', 'Dhaka National Medical', NULL, 'Dhaka', 'Sutrapur', 'Dhaka', '', '12345', 'MBBS Doctor', '2018-07-30 22:36:13', 1, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
