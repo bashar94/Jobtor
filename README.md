@@ -1,4 +1,3 @@
 # Jobtor
 
-Import jobtor.sql to database
-change the database details in 'config/connection.php'
+Import **jobtor.sql** to database. Change the database details in **'config/connection.php'**
